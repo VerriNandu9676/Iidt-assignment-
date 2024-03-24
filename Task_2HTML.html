@@ -1,0 +1,152 @@
+Here's the updated HTML code with descriptions added for each project:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-item h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <h3>To-Do List Application</h3>
+            <p>A simple to-do list application where users can add, edit, and delete tasks.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Weather App</h3>
+            <p>An application that fetches weather data based on user input and displays it.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Recipe Finder</h3>
+            <p>An application where users can search for recipes based on ingredients they have.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing projects, skills, and experience.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Calculator</h3>
+            <p>A simple calculator application that performs basic arithmetic operations.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Blog Website</h3>
+            <p>A blog website where users can read and comment on blog posts.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Memory Game</h3>
+            <p>A fun memory game where users match pairs of cards within a time limit.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Chat Application</h3>
+            <p>A real-time chat application where users can communicate with each other.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Music Player</h3>
+            <p>A simple music player application where users can play, pause, and control songs.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Quiz App</h3>
+            <p>A quiz application where users can answer multiple-choice questions and receive feedback.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+```
